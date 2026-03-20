@@ -56,7 +56,7 @@ export default function PrivacyPage() {
               <section>
                 <h2 className="text-xl font-bold text-gray-900 mb-3">4. Contact Us</h2>
                 <p>
-                  If you have any questions or concerns regarding our privacy practices or wish to update your information, please contact us at <strong>bibeksheelparty@gmail.com</strong>.
+                  If you have any questions or concerns regarding our privacy practices or wish to update your information, please contact us at <strong>ceo.bibeksheel@gmail.com</strong>.
                 </p>
               </section>
             </motion.div>
@@ -91,7 +91,7 @@ export default function PrivacyPage() {
               <section>
                 <h2 className="text-xl font-bold text-gray-900 mb-3">४. सम्पर्क गर्नुहोस्</h2>
                 <p>
-                  यदि तपाइँसँग हाम्रो गोपनीयता नीतिबारे कुनै प्रश्न वा चिन्ता छ, वा तपाइँ तपाइँको जानकारी अद्यावधिक गर्न चाहनुहुन्छ भने, कृपया हामीलाई <strong>bibeksheelparty@gmail.com</strong> मा सम्पर्क गर्नुहोस्।
+                  यदि तपाइँसँग हाम्रो गोपनीयता नीतिबारे कुनै प्रश्न वा चिन्ता छ, वा तपाइँ तपाइँको जानकारी अद्यावधिक गर्न चाहनुहुन्छ भने, कृपया हामीलाई <strong>ceo.bibeksheel@gmail.com</strong> मा सम्पर्क गर्नुहोस्।
                 </p>
               </section>
             </motion.div>

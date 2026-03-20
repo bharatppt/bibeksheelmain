@@ -1,4 +1,4 @@
-import { MapPin, Mail, Facebook, Instagram, Twitter, ArrowRight } from 'lucide-react';
+import { MapPin, Mail, Phone, Facebook, Instagram, Twitter, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { useLanguage } from '../contexts/LanguageContext';
 
@@ -6,8 +6,7 @@ export default function Footer() {
   const { t, language } = useLanguage();
 
   const aboutLinks = [
-    { name: language === 'ne' ? 'इतिहास' : 'History', href: '/about' },
-    { name: language === 'ne' ? 'नेतृत्व टोली' : 'Leadership Team', href: '/about' },
+    { name: t.nav.aboutUs, href: '/about' },
     { name: language === 'ne' ? 'हाम्रो लक्ष्य' : 'Mission', href: '/mission' },
     { name: language === 'ne' ? 'मूल्य-मान्यता' : 'Core Values', href: '/values' },
     { name: language === 'ne' ? 'एजेन्डा' : 'Agenda', href: '/agenda' },
@@ -98,7 +97,7 @@ export default function Footer() {
         {/* Contact info & Social Grid row */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 py-8 border-t border-emerald-800/60 mb-8">
           {/* Contact Details */}
-          <div className="flex flex-col sm:flex-row gap-6 sm:gap-12">
+          <div className="flex flex-col sm:flex-row gap-6 sm:gap-12 flex-wrap">
             <div className="flex items-start gap-4">
               <div className="w-10 h-10 rounded-full bg-emerald-900 flex items-center justify-center text-amber-400 flex-shrink-0">
                 <MapPin className="w-5 h-5" />
@@ -115,6 +114,23 @@ export default function Footer() {
 
             <div className="flex items-start gap-4">
               <div className="w-10 h-10 rounded-full bg-emerald-900 flex items-center justify-center text-amber-400 flex-shrink-0">
+                <Phone className="w-5 h-5" />
+              </div>
+              <div>
+                <p className="text-xs font-bold text-emerald-500 uppercase tracking-wider mb-1">
+                  {language === 'ne' ? 'फोन' : 'Phone'}
+                </p>
+                <a
+                  href="tel:9745957575"
+                  className="text-emerald-100 font-medium hover:text-amber-400 transition-colors"
+                >
+                  9745957575
+                </a>
+              </div>
+            </div>
+
+            <div className="flex items-start gap-4">
+              <div className="w-10 h-10 rounded-full bg-emerald-900 flex items-center justify-center text-amber-400 flex-shrink-0">
                 <Mail className="w-5 h-5" />
               </div>
               <div>
@@ -122,7 +138,7 @@ export default function Footer() {
                   {language === 'ne' ? 'इमेल' : 'Email'}
                 </p>
                 <a
-                  href="mailto:bibeksheelparty@gmail.com"
+                  href="mailto:ceo.bibeksheel@gmail.com"
                   className="text-emerald-100 font-medium hover:text-amber-400 transition-colors"
                 >
                   {t.footer.email}

@@ -30,7 +30,7 @@ export const translations = {
       objectivesTitle: 'Our Main Objectives:',
       description: 'It is possible to create an environment in Nepal where every citizen can live a dignified life!',
       stat: 'Every day, about 1,000 Nepalis leave Nepal in search of self-respect. Many return in coffins. Does this bother you?',
-      callToAction: 'If so, join us — because we believe that only we can end this tragedy.',
+      callToAction: 'If so, join us because we believe that only we can end this tragedy.',
       joinMember: 'Become a Member',
       joinVolunteer: 'Become a Volunteer',
       joinCampaigner: 'Become a Campaigner',
@@ -513,7 +513,7 @@ export const translations = {
       rights: 'Nepal Bibeksheel Party. All rights reserved.',
       copyright: 'Nepal Bibeksheel Party. All rights reserved.',
       registration: 'Party Registration No. 174',
-      email: 'bibeksheelparty@gmail.com',
+      email: 'ceo.bibeksheel@gmail.com',
     },
   },
 
@@ -1028,7 +1028,7 @@ export const translations = {
       rights: 'नेपाल विवेकशील पार्टी. सर्वाधिकार सुरक्षित.',
       copyright: 'नेपाल विवेकशील पार्टी. सर्वाधिकार सुरक्षित.',
       registration: 'दल दर्ता नं १७४',
-      email: 'bibeksheelparty@gmail.com',
+      email: 'ceo.bibeksheel@gmail.com',
     },
   },
 };

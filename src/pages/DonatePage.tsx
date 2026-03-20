@@ -46,18 +46,36 @@ export default function DonatePage() {
                 </div>
                 <h2 className="text-2xl font-bold text-gray-900">{t.donatePage.bankDetails}</h2>
               </div>
-              <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 text-lg">
-                <div className="text-gray-500">{t.donatePage.bankName}:</div>
-                <div className="sm:col-span-2 font-semibold text-gray-900">[Bank Name Here]</div>
-                
-                <div className="text-gray-500">{t.donatePage.accountName}:</div>
-                <div className="sm:col-span-2 font-semibold text-gray-900">नेपाल विवेकशील पार्टी</div>
-                
-                <div className="text-gray-500">{t.donatePage.accountNumber}:</div>
-                <div className="sm:col-span-2 font-semibold text-gray-900 font-mono text-xl tracking-wider text-amber-600">[Account Number Here]</div>
-                
-                <div className="text-gray-500">{t.donatePage.branch}:</div>
-                <div className="sm:col-span-2 font-semibold text-gray-900">[Branch Name Here]</div>
+              <div className="space-y-6">
+                {/* Bank 1 */}
+                <div className="grid grid-cols-1 sm:grid-cols-3 gap-2 sm:gap-4 text-lg bg-gray-50 p-4 rounded-xl border border-gray-100">
+                  <div className="text-gray-500">{t.donatePage.accountName}:</div>
+                  <div className="sm:col-span-2 font-semibold text-gray-900">NEPAL BIBEKSHEEL PARTY</div>
+                  
+                  <div className="text-gray-500">{t.donatePage.accountNumber}:</div>
+                  <div className="sm:col-span-2 font-semibold text-gray-900 font-mono text-xl tracking-wider text-amber-600">02709911900013</div>
+                  
+                  <div className="text-gray-500">{t.donatePage.bankName}:</div>
+                  <div className="sm:col-span-2 font-semibold text-gray-900">Himalayan Bank Limited</div>
+
+                  <div className="text-gray-500">{t.donatePage.branch}:</div>
+                  <div className="sm:col-span-2 font-semibold text-gray-900">Baneshwor</div>
+                </div>
+
+                {/* Bank 2 */}
+                <div className="grid grid-cols-1 sm:grid-cols-3 gap-2 sm:gap-4 text-lg bg-gray-50 p-4 rounded-xl border border-gray-100">
+                  <div className="text-gray-500">{t.donatePage.accountName}:</div>
+                  <div className="sm:col-span-2 font-semibold text-gray-900">Disaster Relief Fund</div>
+                  
+                  <div className="text-gray-500">{t.donatePage.accountNumber}:</div>
+                  <div className="sm:col-span-2 font-semibold text-gray-900 font-mono text-xl tracking-wider text-amber-600">0420152250600010</div>
+                  
+                  <div className="text-gray-500">{t.donatePage.bankName}:</div>
+                  <div className="sm:col-span-2 font-semibold text-gray-900">Prabhu Bank</div>
+
+                  <div className="text-gray-500">{t.donatePage.branch}:</div>
+                  <div className="sm:col-span-2 font-semibold text-gray-900">Saatdobato</div>
+                </div>
               </div>
             </motion.div>
 
@@ -78,45 +96,16 @@ export default function DonatePage() {
                 <div className="text-gray-500 flex items-center gap-2">
                   <span className="font-bold text-green-600">eSewa</span> ID:
                 </div>
-                <div className="sm:col-span-2 font-semibold text-gray-900 font-mono text-xl tracking-wider">[eSewa Number Here]</div>
+                <div className="sm:col-span-2 font-semibold text-gray-900 font-mono text-xl tracking-wider">9745957575</div>
                 
                 <div className="text-gray-500 flex items-center gap-2">
                   <span className="font-bold text-purple-600">Khalti</span> ID:
                 </div>
-                <div className="sm:col-span-2 font-semibold text-gray-900 font-mono text-xl tracking-wider">[Khalti Number Here]</div>
+                <div className="sm:col-span-2 font-semibold text-gray-900 font-mono text-xl tracking-wider">9745957575</div>
               </div>
             </motion.div>
 
-            {/* QR Codes */}
-            <motion.div 
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.2 }}
-              className="bg-white p-6 md:p-8 rounded-2xl shadow-sm border border-gray-100"
-            >
-              <div className="flex items-center gap-3 mb-6 border-b border-gray-100 pb-4">
-                <div className="w-10 h-10 bg-amber-50 rounded-lg flex items-center justify-center">
-                  <QrCode className="w-6 h-6 text-amber-500" />
-                </div>
-                <h2 className="text-2xl font-bold text-gray-900">{t.donatePage.scanQr}</h2>
-              </div>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div className="flex flex-col items-center justify-center bg-gray-50 p-6 rounded-xl border border-gray-200">
-                  <div className="w-64 h-64 bg-white border-2 border-dashed border-gray-300 rounded-xl flex items-center justify-center mb-4 relative overflow-hidden">
-                    <span className="text-gray-400 text-sm text-center px-4">Fonepay QR Code<br/>(Replace with Image tag)</span>
-                    {/* <img src="/fonepay-qr.png" alt="Fonepay QR" className="absolute inset-0 w-full h-full object-contain p-2" /> */}
-                  </div>
-                  <span className="font-bold text-xl text-gray-900">Fonepay</span>
-                </div>
-                <div className="flex flex-col items-center justify-center bg-gray-50 p-6 rounded-xl border border-gray-200">
-                  <div className="w-64 h-64 bg-white border-2 border-dashed border-gray-300 rounded-xl flex items-center justify-center mb-4 relative overflow-hidden">
-                    <span className="text-gray-400 text-sm text-center px-4">eSewa QR Code<br/>(Replace with Image tag)</span>
-                    {/* <img src="/esewa-qr.png" alt="eSewa QR" className="absolute inset-0 w-full h-full object-contain p-2" /> */}
-                  </div>
-                  <span className="font-bold text-xl text-gray-900">eSewa</span>
-                </div>
-              </div>
-            </motion.div>
+
 
             <motion.div 
               initial={{ opacity: 0 }}

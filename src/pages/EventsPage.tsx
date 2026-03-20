@@ -111,19 +111,7 @@ export default function EventsPage() {
       <section className="py-16 bg-emerald-50">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-2xl font-bold text-gray-900 mb-8">{t.events.upcoming}</h2>
-          <div className="grid md:grid-cols-2 gap-6">
-            {[1, 2].map((i) => (
-              <div
-                key={i}
-                className="bg-white rounded-2xl p-6 border border-gray-100 shadow-sm border-dashed border-gray-300"
-              >
-                <div className="text-gray-300 text-center text-4xl mb-3">📅</div>
-                <p className="text-gray-400 text-center text-sm">
-                  {language === 'ne' ? '[आगामी कार्यक्रम यहाँ थप्नुहोस्]' : '[Add upcoming event here]'}
-                </p>
-              </div>
-            ))}
-          </div>
+
           <p className="text-center text-gray-500 mt-8">{t.events.noMoreEvents}</p>
         </div>
       </section>

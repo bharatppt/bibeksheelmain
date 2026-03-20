@@ -82,7 +82,7 @@ export default function JoinPage() {
                     <p className="text-sm">{track.benefit}</p>
                   </div>
                   <a
-                    href="https://bibeksheel.org/join"
+                    href="https://forms.gle/dCWbD2YN2m5CuLAu6"
                     target="_blank"
                     rel="noopener noreferrer"
                     className={`block text-center py-3 px-6 rounded-full font-bold text-white ${track.color} hover:opacity-90 transition-opacity`}
