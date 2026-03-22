@@ -48,7 +48,7 @@ export default function Footer() {
               </div>
             </Link>
 
-            <p className="text-emerald-200/90 text-base md:text-lg mb-8 leading-relaxed max-w-md font-medium">
+            <p className="text-white text-base md:text-lg mb-8 leading-relaxed max-w-md font-medium">
               {t.footer.tagline}
             </p>
           </div>
@@ -64,7 +64,7 @@ export default function Footer() {
                 <li key={link.href}>
                   <Link
                     to={link.href}
-                    className="text-emerald-200/90 hover:text-white hover:translate-x-1 inline-flex transition-all duration-200 text-[15px] font-medium"
+                    className="text-white hover:text-amber-400 hover:translate-x-1 inline-flex transition-all duration-200 text-[15px] font-medium"
                   >
                     {link.name}
                   </Link>
@@ -83,7 +83,7 @@ export default function Footer() {
                 <li key={link.href}>
                   <Link
                     to={link.href}
-                    className="text-emerald-200/90 hover:text-white hover:translate-x-1 inline-flex transition-all duration-200 text-[15px] font-medium"
+                    className="text-white hover:text-amber-400 hover:translate-x-1 inline-flex transition-all duration-200 text-[15px] font-medium"
                   >
                     {link.name}
                   </Link>
@@ -138,7 +138,7 @@ export default function Footer() {
                   {language === 'ne' ? 'इमेल' : 'Email'}
                 </p>
                 <a
-                  href="mailto:ceo.bibeksheel@gmail.com"
+                  href="mailto:bibeksheelparty@gmail.com"
                   className="text-emerald-100 font-medium hover:text-amber-400 transition-colors"
                 >
                   {t.footer.email}
@@ -150,7 +150,7 @@ export default function Footer() {
           {/* Social Icons */}
           <div className="flex lg:justify-end items-center gap-4">
             <span className="text-sm font-bold text-emerald-400 mr-2 hidden sm:block uppercase tracking-wide">
-              {language === 'ne' ? 'हामीलाई पछ्याउनुहोस्' : 'Follow Us'}
+              {language === 'ne' ? 'हामीलाई फलो गर्नुहोस्' : 'Follow Us'}
             </span>
             {[
               { Icon: Facebook, label: 'Facebook', href: 'https://www.facebook.com/bibeksheelp' },
@@ -182,7 +182,7 @@ export default function Footer() {
         </div>
 
         {/* Bottom Copyright Bar */}
-        <div className="flex flex-col sm:flex-row items-center justify-between gap-4 text-emerald-500/80 text-sm font-medium">
+        <div className="flex flex-col sm:flex-row items-center justify-between gap-4 text-white text-sm font-medium">
           <p>
             © {new Date().getFullYear()} {t.footer.copyright}
           </p>

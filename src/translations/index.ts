@@ -513,7 +513,7 @@ export const translations = {
       rights: 'Nepal Bibeksheel Party. All rights reserved.',
       copyright: 'Nepal Bibeksheel Party. All rights reserved.',
       registration: 'Party Registration No. 174',
-      email: 'ceo.bibeksheel@gmail.com',
+      email: 'bibeksheelparty@gmail.com',
     },
   },
 
@@ -1028,7 +1028,7 @@ export const translations = {
       rights: 'नेपाल विवेकशील पार्टी. सर्वाधिकार सुरक्षित.',
       copyright: 'नेपाल विवेकशील पार्टी. सर्वाधिकार सुरक्षित.',
       registration: 'दल दर्ता नं १७४',
-      email: 'ceo.bibeksheel@gmail.com',
+      email: 'bibeksheelparty@gmail.com',
     },
   },
 };
