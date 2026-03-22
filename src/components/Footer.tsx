@@ -1,4 +1,4 @@
-import { MapPin, Mail, Phone, Facebook, Instagram, Twitter, ArrowRight } from 'lucide-react';
+import { MapPin, Mail, Phone, Facebook, Instagram, Twitter } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { useLanguage } from '../contexts/LanguageContext';
 
@@ -166,6 +166,18 @@ export default function Footer() {
                 <Icon className="w-[18px] h-[18px]" />
               </a>
             ))}
+            {/* YouTube */}
+            <a
+              href="https://youtube.com/@bibeksheelnepali"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="YouTube"
+              className="w-11 h-11 rounded-full bg-emerald-900/80 border border-emerald-800 flex items-center justify-center text-emerald-300 hover:bg-red-600 hover:text-white hover:scale-110 hover:-translate-y-1 transition-all duration-300"
+            >
+              <svg viewBox="0 0 24 24" fill="currentColor" className="w-[18px] h-[18px]">
+                <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+              </svg>
+            </a>
           </div>
         </div>
 
